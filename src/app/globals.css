@@ -2,32 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  const [fullName, setFullName] = useState("");
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+  useEffect(() => {
+    setFullName(firstName + " " + lastName);
+  }, [firstName, lastName]);
+
+  return(
+    <main className="flex flex-col gap-1 p-4">
+      <p>Full name: {fullName}</p>
+      <input
+      placeholder="first name"
+      value={firstName}
+      onChange={(e) => setFirstName(e.target.value)}
+      className="border rounded-sm p-1 w-40"
+      />
+      <input 
+      placeholder="last name"
+      value={lastName}
+      onChange={(e) => setLastName(e.target.value)}
+      className="border rounded p-1 w-40"
+      />
+    </main>
+  ); */
